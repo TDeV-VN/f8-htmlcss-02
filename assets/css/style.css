@@ -1,0 +1,126 @@
+/* ========== Common ========== */
+:root {
+  --primary-color: #171100;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  font-weight: 400;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "popins", sans-serif;
+
+  /* Optimize */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; /*only macOS*/
+  -moz-osx-font-smoothing: grayscale; /*only macOS*/
+}
+
+h1,
+h2,
+strong {
+  color: var(--primary-color);
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  width: 1170px;
+  height: 100%;
+  max-width: calc(100vw - 48px);
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 21px;
+  background: var(--primary-color);
+  text-align: center;
+  line-height: 50px;
+}
+
+/* ========== Header ========== */
+.header {
+  --content-margin: 8px;
+
+  padding-top: 36px;
+  padding-bottom: var(--content-margin);
+  background: #fffcf4;
+}
+
+.header--fixed {
+  position: sticky;
+  top: calc(calc(36px - var(--content-margin)) * (-1));
+  z-index: 1;
+}
+.header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 85px;
+  height: 34px;
+  padding: 3px 0;
+}
+
+.header__action {
+  --item-padding: 21px;
+  display: flex;
+  align-items: center;
+  gap: calc(90px - var(--item-padding));
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  position: relative;
+  padding: 8px var(--item-padding);
+  color: #5f5b53;
+  font-size: 1.6rem;
+}
+
+.nav__item:hover,
+.nav__item--active {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 1.6rem;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.nav__item--active::after {
+  content: "";
+  position: absolute;
+  left: var(--item-padding);
+  display: block;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--primary-color);
+}
+
+.header__btn--signup {
+  min-width: 144px;
+  border-radius: 24.5px;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.header__btn--signup:hover {
+  opacity: 0.9;
+}
