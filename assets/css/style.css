@@ -179,6 +179,14 @@ a {
   border-radius: 50%;
 }
 
+.hero__summary__item:nth-child(2) .hero__summary__icon {
+  background: #fcefff;
+}
+
+.hero__summary__item:nth-child(3) .hero__summary__icon {
+  background: #ebeaff;
+}
+
 .hero__summary__label {
   color: #5f5b53;
   font-size: 1.4rem;
