@@ -196,24 +196,26 @@ a {
 .hero__content {
   width: 52%;
   padding-left: 130px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .hero__heading {
   margin-bottom: 22px;
-  font-size: 5.8rem;
+  font-size: 5rem;
   line-height: 1.17; /* 117.241% */
   letter-spacing: -1.16px;
 }
 
 .hero__desc {
   color: #5f5b53;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.7; /* 166.667% */
 }
 
 .hero__action {
-  margin-top: 38px;
-  margin-bottom: 48px;
+  margin-top: 28px;
+  margin-bottom: 38px;
   display: flex;
   align-items: center;
   gap: 28px;
@@ -263,9 +265,10 @@ a {
 }
 
 .hero__stats {
-  margin-top: 8px;
+  margin-top: 5px;
   display: flex;
   align-items: center;
+  line-height: 1;
   gap: 28px;
 }
 
