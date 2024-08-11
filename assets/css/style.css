@@ -522,8 +522,8 @@ a {
 
 .feature .content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 130px;
 }
 
 .feature__img {
@@ -546,6 +546,7 @@ a {
 
 .feature__content {
   width: 41%;
+  flex-shrink: 0; /* Giữ nguyên độ rộng chữ và gap*/
 }
 
 .feature__heading {
@@ -567,4 +568,23 @@ a {
   background: var(--primary-color-btn);
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+.feature__btn:hover {
+  opacity: 0.9;
+}
+
+.feature .content:last-child {
+  margin-top: 200px;
+  flex-direction: row-reverse;
+}
+
+.feature .content:last-child .feature__img img {
+  width: 82%;
+  height: 440px;
+  border-radius: 20px;
+}
+
+.feature .content:last-child .feature__content {
+  width: 48%;
 }
