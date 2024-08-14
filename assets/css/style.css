@@ -254,11 +254,15 @@ a {
 }
 
 .hero__btn--watch-video {
-  border: none;
+  border-color: transparent;
   background: transparent;
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.hero__btn--watch-video:hover {
+  box-shadow: -4px 5px 16px -4px rgba(0, 0, 0, 0.68);
 }
 
 .hero__btn__icon {
